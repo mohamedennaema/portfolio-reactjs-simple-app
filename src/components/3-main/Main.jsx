@@ -10,7 +10,7 @@ const Main = () => {
   const [projectData, setProjectData] = useState([]);
   const [arr, setArr] = useState([]);
   const    fetchData= async()=> {
-    await fetch("https://projectportofoli.s3.eu-north-1.amazonaws.com/protofolioData.json", {
+    await fetch("https://projectportofoli.s3.eu-north-1.amazonaws.com/exemple.json", {
       method: 'GET',
       headers: { 'Content-Type': 'application/json'},
     }).then((resp)=>resp.json()).then((data)=>{
